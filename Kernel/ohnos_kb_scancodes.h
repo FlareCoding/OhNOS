@@ -1,0 +1,10 @@
+#pragma once
+
+#define OHNOS_KEYCODE_BACKSPACE         0x8E
+#define OHNOS_KEYCODE_LSHIFT_PRESSED    0x2A
+#define OHNOS_KEYCODE_LSHIFT_RELEASED   0xAA
+#define OHNOS_KEYCODE_RSHIFT_PRESSED    0x36
+#define OHNOS_KEYCODE_RSHIFT_RELEASED   0xB6
+#define OHNOS_KEYCODE_RETURN            0x9C
+
+extern const char ohnos_ScanCodes[58];
