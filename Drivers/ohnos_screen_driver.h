@@ -56,11 +56,26 @@ const char* ohnos_hex_to_string(uint64_t val);
 // Converts width/height (x/y) coodinates to a VGA screen index.
 uint16_t ohnos_pos_from_coords(uint8_t x, uint8_t y);
 
+// Converts a string to an integer
+int ohnos_atoi(const char* str);
+
+// Converts an integer to a string
+void ohnos_itoa(int num, char* str, int base);
+
 // Prints a string to screen.
 void ohnos_kprint(const char* str, uint8_t color);
 
 // Prints a single character to screen.
 void ohnos_kprint_char(char c, uint8_t color);
 
+// Prints an integer to screen
+void ohnos_kprint_int(int i, uint8_t color);
+
 // Clears the VGA screen buffer.
 void ohnos_kcls();
+
+// Here temporarily
+void memcpy(char* src, char* dest, uint64_t size);
+
+// Here temporarily
+void memset(char* src, byte_t val, uint64_t size);

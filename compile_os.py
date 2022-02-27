@@ -29,6 +29,9 @@ os.system(CC_LD + ' -T link.ld')
 # create the final bootloader binaries
 os.system('cat BootLoader/bin/ohnos_bootloader.bin ohnos_kernel.bin > os-image/OhNOS.bin')
 
+# remove temp kernel binaries
+os.system('rm ohnos_kernel.bin')
+
 # run the os
 os.chdir('os-image')
 os.system('qemu-system-x86_64 -drive format=raw,file=OhNOS.bin')
